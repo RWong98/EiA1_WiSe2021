@@ -1,0 +1,28 @@
+
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 800px;
+    margin: 0px auto;
+    background-image: url("/Aufgabe_3/L03/task_material/images/bg.png");
+    background-repeat: repeat;
+}
+#box{
+    background-color: #B63514;
+    width: 600px;
+    height: 600px;
+    top: 600px;
+    left: 600px;
+    border: 1px #B63514;
+    text-align: center;
+    font-size: 190px;
+    font-weight: 800;
+    letter-spacing: -20px;
+    border-radius: 1000px;
+    margin: -520px 0px 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#lorem{
+    text-align: center;
+}
