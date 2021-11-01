@@ -26,3 +26,20 @@ body {
 #lorem{
     text-align: center;
 }
+
+ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    background-color: #000000;
+    color: white;
