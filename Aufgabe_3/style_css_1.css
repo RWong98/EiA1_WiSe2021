@@ -8,6 +8,8 @@ body {
     background-repeat: repeat;
     overflow-y: scroll;
 }
+
+/*Halbkreis*/
 #box{
     background-color: #B63514;
     width: 600px;
@@ -28,11 +30,22 @@ body {
 #box p {
   margin-top: 300px;
 }
+
+/*Facebook*/
+#facebook {
+  width: auto;
+  opacity: 90%;
+  margin-left: 80%;
+
+}
+
+/*Lorem Text*/
 #lorem{
     text-align: center;
     margin-top: -250px;
 }
 
+/*Listen Text*/
 ul {
     list-style-type: none;
     margin: 1;
