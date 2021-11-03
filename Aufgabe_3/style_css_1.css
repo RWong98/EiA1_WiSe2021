@@ -59,6 +59,7 @@ ul {
   
   li a {
     display: block;
+    text-decoration: none;
     padding: 8px;
     background-color: #000000;
     color: white;
