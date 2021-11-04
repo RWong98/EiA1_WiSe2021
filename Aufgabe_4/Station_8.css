@@ -2,6 +2,12 @@ body {
     background-image: url(../Aufgabe_4/task_material_winter/Station_8_Youtube/images/bg.png);
 }
 
+/*Navigation*/
+.Nav {
+    position: absolute;
+    text-decoration: none;
+}
+
 .Karte {
     position: absolute;
     top: 200px;
@@ -11,13 +17,11 @@ body {
 
 .Video {
     position: absolute;
-    top: 130px;
-    left: 430px;
-    display: block;
-    z-index: auto;
+    top: 50px;
+    left: 50px;
 }
 .Banderole {
     position: absolute;
-    top: 475px;
-    left: 820px;
+    top: 265px;
+    left: 360px;
 }
