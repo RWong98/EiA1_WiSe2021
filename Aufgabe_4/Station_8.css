@@ -4,7 +4,12 @@ body {
 
 /*Navigation*/
 .Nav {
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+}
+
+a {
     text-decoration: none;
 }
 

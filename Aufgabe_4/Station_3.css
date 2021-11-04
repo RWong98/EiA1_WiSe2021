@@ -1,0 +1,67 @@
+body {
+    background-image: url(../Aufgabe_4/task_material_winter/Station_3_Hover/images/bg.png);
+}
+
+/*Navigation*/
+.Nav {
+    position: fixed;
+    top: 0px;
+    right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Karten Inhalt*/
+.Karte {
+    position: relative;
+    text-align: center;
+    top: 160px;
+}
+
+.Text {
+    position: absolute;
+    top: 240px;
+    left: 500px;
+    color: white;
+}
+
+/*Sterne*/
+.Stern1 {
+    position: relative;
+    top: 2px;
+    left: 510px;
+}
+
+.Stern1An {
+    position: relative;
+    top: -275px;
+    left: 510px;
+    opacity: 0%;
+}
+
+.Stern1An:hover {
+    top: -275px;
+    left: 510px;
+    opacity: 100%;
+}
+
+.Stern2 {
+    position: relative;
+    top: -120px;
+    left: 620px;
+}
+
+
+.Stern3 {
+    position: relative;
+    top: -110px;
+    left: 700px;
+}
+
+.Stern4 {
+    position: relative;
+    top: -250px;
+    left: 885px;
+}
