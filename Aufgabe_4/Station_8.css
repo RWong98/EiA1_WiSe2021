@@ -1,0 +1,23 @@
+body {
+    background-image: url(/task_material_winter/Station_8_Youtube/images/bg.png);
+}
+
+.Karte {
+    position: absolute;
+    top: 200px;
+    left: 450px;
+    display: block;
+}  
+
+.Video {
+    position: absolute;
+    top: 130px;
+    left: 430px;
+    display: block;
+    z-index: auto;
+}
+.Banderole {
+    position: absolute;
+    top: 475px;
+    left: 820px;
+}
