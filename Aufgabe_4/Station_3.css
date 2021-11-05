@@ -1,5 +1,7 @@
 body {
     background-image: url(../Aufgabe_4/task_material_winter/Station_3_Hover/images/bg.png);
+/*Hide and disable scrollbar*/
+    overflow: hidden;
 }
 
 /*Navigation*/
@@ -7,6 +9,8 @@ body {
     position: fixed;
     top: 0px;
     right: 20px;
+    background: orange;
+    padding: 2px;
 }
 
 a {
@@ -29,39 +33,50 @@ a {
 
 /*Sterne*/
 .Stern1 {
+    display: inline;
     position: relative;
-    top: 2px;
+    top: -35px;
     left: 510px;
-}
-
-.Stern1An {
-    position: relative;
-    top: -275px;
-    left: 510px;
-    opacity: 0%;
-}
-
-.Stern1An:hover {
-    top: -275px;
-    left: 510px;
-    opacity: 100%;
 }
 
 .Stern2 {
+    display: inline;
     position: relative;
-    top: -120px;
-    left: 620px;
+    top: -70px;
+    left: 550px;
 }
 
 
 .Stern3 {
+    display: inline;
     position: relative;
-    top: -110px;
-    left: 700px;
+    top: 20px;
+    left: 600px;
 }
 
 .Stern4 {
+    display: inline;
     position: relative;
-    top: -250px;
-    left: 885px;
+    top: -40px;
+    left: 700px;
+}
+
+.Stern1:hover {
+    display: inline-flex;
+    background: url(../Aufgabe_4/task_material_winter/Station_3_Hover/images/stern_hover.png);
+}
+
+.Stern2:hover {
+    display: inline-flex;
+    background: url(../Aufgabe_4/task_material_winter/Station_3_Hover/images/stern_hover.png);
+}
+
+.Stern3:hover {
+    display: inline-flex;
+    background: url(../Aufgabe_4/task_material_winter/Station_3_Hover/images/stern_hover.png);
+}
+
+.Stern4:hover {
+    display: inline-flex;
+    background: url(../Aufgabe_4/task_material_winter/Station_3_Hover/images/stern_hover.png);
 }
