@@ -21,8 +21,8 @@ a {
 }  
 
 .Video {
-    position: absolute;
-    top: 50px;
+    position: relative;
+    top: -360px;
     left: 50px;
 }
 .Banderole {
