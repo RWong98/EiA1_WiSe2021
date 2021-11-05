@@ -9,6 +9,14 @@ body {
     overflow-y: scroll;
 }
 
+/*Navigation*/
+.Nav {
+  position: fixed;
+  top: 0px;
+  right: 30px;
+}
+
+
 /*Halbkreis*/
 #box{
     background-color: #B63514;
@@ -45,7 +53,7 @@ body {
     margin-top: -250px;
 }
 
-/*Listen Text*/
+/*Listen Text und Navigation */
 ul {
     list-style-type: none;
     margin: 1;
@@ -64,3 +72,7 @@ ul {
     background-color: #000000;
     color: white;
   }
+
+li a:hover {
+  color: blue;
+}
