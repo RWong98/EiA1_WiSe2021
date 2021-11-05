@@ -1,0 +1,57 @@
+body {
+    background-image: url(../Aufgabe_4/task_material_winter/Station_7_Videos/images/bg.png);
+/*Hide and disable scrollbar*/
+    overflow: hidden;
+}
+
+/*Navigation*/
+.Nav {
+    position: fixed;
+    top: 0px;
+    right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Karte*/
+.Karte {
+    position: relative;
+    text-align: center;
+    top: 150px;
+}
+
+.Feuer {
+    position: relative;
+    top: -400px;
+    left: 710px;
+    transition: 2s;
+}
+
+.Geschenke {
+    position: relative;
+    top: -480px;
+    left: 800px;
+}
+
+.Pflanze {
+    position: relative;
+    top: -300px;
+    left: 390px;
+}
+
+.Stern {
+    position: relative;
+    top: -650px;
+    left: 600px;
+}
+
+
+.Text {
+    position: absolute;
+    top: 320px;
+    left: 550px;
+    color: white;
+    font-size: 20px;
+}

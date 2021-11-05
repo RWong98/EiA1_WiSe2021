@@ -1,5 +1,7 @@
 body {
     background-image: url(../Aufgabe_4/task_material_winter/Station_8_Youtube/images/bg.png);
+/*Hide and disable scrollbar*/
+    overflow: hidden;
 }
 
 /*Navigation*/
