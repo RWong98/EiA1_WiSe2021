@@ -1,0 +1,79 @@
+body {
+    background-image: url(../Aufgabe_4/task_material_winter/Station_5_Forms/images/bg.png);
+/*Hide and disable scrollbar*/
+    overflow: hidden;
+}
+
+/*Navigation*/
+.Nav {
+    position: fixed;
+    background: orange;
+    padding: 2px;
+    top: 0px;
+    right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main h1 {
+    color: white;
+    position: relative;
+    top: -30px;
+    left: 5px;
+}
+
+main h1+p {
+    margin-left: -5px;
+}
+
+main div p {
+    color: white;
+    margin-left: 0px;
+}
+
+.Alles {
+    position: relative;
+    text-align: center;
+    top: 180px;
+}
+
+.text1 {
+    position: relative;
+    top: -350px;
+    left: -150px;
+}
+
+.text2 {
+    position: relative;
+    color: white;
+    margin-left: 20px;
+    top: -350px;
+    left: -150px;
+}
+
+.container1 {
+    position: absolute;
+    top: 20px;
+    left: 650px;
+}
+
+
+.container2 {
+    position: absolute;
+    top: 20px;
+    left: 700px;
+}
+
+.Abschicken {
+    position: relative;
+    top: -330px;
+    left: -205px;
+    border: 4px;
+    background-color: white;
+    color: black;
+    padding: 4px 4px;
+    font-size: 11px;
+    cursor: pointer;
+}
