@@ -41,9 +41,11 @@ body {
 
 /*Facebook*/
 #facebook {
-  width: auto;
-  opacity: 90%;
-  margin-left: 80%;
+  position: relative;
+  top: -200px;
+  left: 120px;
+  height: 10px;
+  width: 10px;
 
 }
 
