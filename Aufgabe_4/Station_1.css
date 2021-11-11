@@ -1,7 +1,10 @@
 /*Hintergrund*/
 body {
     background-image: url(../Aufgabe_4/task_material_winter/Station_1_Positionierung/images/bg.png);
+/*Hide and disable scrollbar*/
+    overflow: hidden;
 }
+
 
 /*Navigation*/
 .Nav {
