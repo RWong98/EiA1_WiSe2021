@@ -34,9 +34,10 @@ main div p {
 }
 
 .Alles {
-    position: relative;
+    position: absolute;
     text-align: center;
-    top: 180px;
+    top: 160px;
+    left: 450px;
 }
 
 .text1 {
@@ -54,21 +55,21 @@ main div p {
 }
 
 .container1 {
-    position: absolute;
-    top: 20px;
-    left: 650px;
+    position: relative;
+    top: -10px;
+    left: -60px;
 }
 
 
 .container2 {
-    position: absolute;
-    top: 20px;
-    left: 700px;
+    position: relative;
+    top: -10px;
+    left: -40px;
 }
 
 .Abschicken {
     position: relative;
-    top: -330px;
+    top: -355px;
     left: -205px;
     border: 4px;
     background-color: white;
@@ -76,4 +77,5 @@ main div p {
     padding: 4px 4px;
     font-size: 11px;
     cursor: pointer;
+    border-radius: 5%;
 }
