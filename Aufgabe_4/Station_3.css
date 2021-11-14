@@ -19,14 +19,15 @@ a {
 
 /*Karten Inhalt*/
 .Karte {
-    position: relative;
+    position: absolute;
     text-align: center;
     top: 160px;
+    left: 450px;
 }
 
 .Text {
-    position: absolute;
-    top: 240px;
+    position: relative;
+    top: 230px;
     left: 500px;
     color: white;
 }
@@ -35,14 +36,14 @@ a {
 .Stern1 {
     display: inline;
     position: relative;
-    top: -35px;
-    left: 510px;
+    top: 240px;
+    left: 490px;
 }
 
 .Stern2 {
     display: inline;
     position: relative;
-    top: -70px;
+    top: 215px;
     left: 550px;
 }
 
@@ -50,15 +51,15 @@ a {
 .Stern3 {
     display: inline;
     position: relative;
-    top: 20px;
-    left: 600px;
+    top: 290px;
+    left: 590px;
 }
 
 .Stern4 {
     display: inline;
     position: relative;
-    top: -40px;
-    left: 700px;
+    top: 220px;
+    left: 680px;
 }
 
 .Stern1:hover {

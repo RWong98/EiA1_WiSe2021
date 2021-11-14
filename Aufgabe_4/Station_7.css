@@ -19,41 +19,42 @@ a {
 
 /*Karte*/
 .Karte {
-    position: relative;
+    position: absolute;
     text-align: center;
-    top: 150px;
+    top: 160px;
+    left: 450px;
 }
 
 .Feuer {
     position: relative;
-    top: -400px;
-    left: 710px;
+    top: 10px;
+    left: 700px;
     transition: 2s;
 }
 
 .Geschenke {
     position: relative;
-    top: -480px;
-    left: 800px;
+    top: -90px;
+    left: 820px;
 }
 
 .Pflanze {
     position: relative;
-    top: -300px;
+    top: 100px;
     left: 390px;
 }
 
 .Stern {
     position: relative;
-    top: -650px;
+    top: -200px;
     left: 600px;
 }
 
 
 .Text {
-    position: absolute;
-    top: 320px;
-    left: 550px;
+    position: relative;
+    top: -350px;
+    left: 540px;
     color: white;
     font-size: 20px;
 }
