@@ -1,0 +1,33 @@
+.page-wrapper {
+    display: block;
+    background-color: white;
+}
+.element-center {
+    position: relative;
+    top: 50px;
+}
+
+.element-top-left {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.element-top-right {
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+
+.element-bottom-left {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.element-bottom-right {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+
+}
