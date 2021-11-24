@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
         document.querySelector(".EmissionRelative").innerHTML = continentzuwelt.toFixed(2) + "%";
         document.querySelector(".GrowthPercent").innerHTML = continentzucontinent.toFixed(2) + "%";
         document.querySelector(".GrowthAbsolute").innerHTML = continentzucontinentco.toFixed(2);
-        document.querySelector(".chart").setAttribute("style", "height: 20px");
+        document.querySelector(".chart").style.height = (continent18 / WW2018 * 100) + "%";
     }
     document.querySelector(".europe").addEventListener("click", function () { continents(EU, EU2018, EUrelative, EUzuEUP, EUzuEUA); });
     document.querySelector(".africa").addEventListener("click", function () { continents(AF, AF2018, AFrelative, AFzuAFP, AFzuAFA); });
