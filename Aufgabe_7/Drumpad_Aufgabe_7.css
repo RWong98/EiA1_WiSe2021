@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+
+button {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.ButtonsAll {
+    position: relative;
+    text-align: center;
+}
+
+.ButtonBeat {
+    position: relative;
+    background-color: black;
+    text-align: center;
+    border-radius: 0px;
+    border-color: black;
+}
+
+/*Button1 sind blaue Buttons*/
+/*Button2 sind magenta Buttons*/
+/*Button3 sind orange Buttons*/
