@@ -1,11 +1,28 @@
+header h1 {
+    color: white;
+    font-family: monospace;
+}
+
 body {
     background-color: black;
+    overflow: hidden;
 }
 
 button {
     height: 150px;
     width: 150px;
     border-radius: 10px;
+}
+
+#Flow {
+    position: relative;
+    top: 0px;
+    left: 5px;
+    height: 70px;
+    width: 90px;
+    background-color: greenyellow;
+    font-family: monospace;
+    font-size: 15px;
 }
 
 .ButtonsAll {
@@ -22,5 +39,14 @@ button {
 }
 
 /*Button1 sind blaue Buttons*/
+.Button1 {
+    background: linear-gradient(to top, #1c90e7,#3a9df5);
+}
 /*Button2 sind magenta Buttons*/
+.Button2 {
+    background: linear-gradient(to top, #ef0cb5,#f563b0);
+}
 /*Button3 sind orange Buttons*/
+.Button3 {
+    background: linear-gradient(to bottom, #f5b64d,#e98b20);
+}
