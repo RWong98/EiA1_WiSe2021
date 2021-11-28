@@ -15,7 +15,13 @@ function playSample(soundeffects) {
     var sounds = new Audio(soundeffects);
     sounds.play();
 }
-setInterval(function () {
-    // Anweisungen
-}, 500);
+/*Pfad Verlinkung ändern nicht vergessen!*/
+/*Beat Playback*/
+function Beats() {
+    setInterval(function () {
+        (sounds[0]).play();
+        (sounds[1]).play();
+        (sounds[2]).play();
+    }, 500);
+}
 //# sourceMappingURL=Drumpad_Aufgabe_7.js.map

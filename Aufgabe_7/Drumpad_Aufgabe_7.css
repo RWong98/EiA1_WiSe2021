@@ -14,13 +14,18 @@ button {
     border-radius: 10px;
 }
 
+button:hover {
+    opacity: 60%;
+}
+
 #Flow {
     position: relative;
     top: 0px;
     left: 5px;
     height: 70px;
     width: 90px;
-    background-color: greenyellow;
+    border-radius: 10px;
+    background-color: rgb(56, 196, 130);
     font-family: monospace;
     font-size: 15px;
 }

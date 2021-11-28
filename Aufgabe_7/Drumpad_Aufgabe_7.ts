@@ -18,6 +18,13 @@ function playSample(soundeffects){
     sounds.play();
 }
 
+/*Pfad Verlinkung ändern nicht vergessen!*/
+
+/*Beat Playback*/
+
+function Beats(){
 setInterval(function() {
-    // Anweisungen
- }, 500);
+    (sounds[0]).play();
+    (sounds[1]).play();
+    (sounds[2]).play();
+ }, 500);}
