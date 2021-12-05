@@ -1,0 +1,53 @@
+header h1 {
+    color: white;
+    font-family: monospace;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+button {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+button:hover {
+    opacity: 60%;
+}
+
+.ButtonsAll {
+    position: relative;
+    text-align: center;
+}
+
+#play {
+    background: linear-gradient(to top, #20b612, #33e623);
+}
+#random {
+    background: linear-gradient(to top, #20b612, #33e623);
+}
+#trash {
+    background: linear-gradient(to top, #20b612, #33e623);
+}
+
+
+/*Button1 sind blaue Buttons*/
+.Button1 {
+    background: linear-gradient(to top, #1c90e7,#3a9df5);
+}
+/*Button2 sind magenta Buttons*/
+.Button2 {
+    background: linear-gradient(to top, #ef0cb5,#f563b0);
+}
+/*Button3 sind orange Buttons*/
+.Button3 {
+    background: linear-gradient(to bottom, #f5b64d,#e98b20);
+}
+
+footer {
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+}
