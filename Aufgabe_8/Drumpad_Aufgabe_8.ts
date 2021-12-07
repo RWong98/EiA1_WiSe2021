@@ -1,5 +1,5 @@
 /*Array*/
-var sounds: HTMLAudioElement [] = 
+var sounds: HTMLAudioElement [] =
 [new Audio ("../Aufgabe_8/assets/kick.mp3"), 
 new Audio ("../Aufgabe_8/assets/hihat.mp3"), 
 new Audio ("../Aufgabe_8/assets/snare.mp3"), 
@@ -11,6 +11,7 @@ new Audio ("../Aufgabe_8/assets/Bully_Maguire_Dirt2.mp3"),
 new Audio ("../Aufgabe_8/assets/Give_me_rent.mp3")];
 
 var key = 0;
+var interval;
 
 /*Buttons*/
 document.querySelector("#Button01").addEventListener("click", function () { (sounds[0]).play(); });
@@ -27,9 +28,8 @@ document.querySelector("#random").addEventListener("click", BeatRandom);
 document.querySelector("#trash").addEventListener("click", Delete);
 
 /*Funktion*/
-function playSample(soundeffects){
-    var sounds = new Audio (soundeffects);
-    sounds.play();
+function playSample(soundeffects) {
+    soundeffects.play();
 }
 
 /*Beat Playback*/
@@ -43,6 +43,10 @@ setInterval(function() {
 }
 
 /*Playbutton soll sich zum Stopbutton ändern*/
+function playagain() {
+    interval = setInterval(Beats, 500);
+}
+
 function playBeat() {
     if (document.querySelector("#play").getAttribute("class") == "fas fa-play fa-2x") {
         document.querySelector("#play").setAttribute("class", "fas fa-stop fa-2x");
@@ -50,25 +54,21 @@ function playBeat() {
     }
     else {
         document.querySelector("#play").setAttribute("class", "fas fa-play fa-2x");
-        Beats();
+        clearInterval(interval);
     }
 }
  /*Pfad Verlinkung ändern nicht vergessen!*/
 
-function BeatRandom() {
-/*brauche noch Zeit zum überarbeiten :/, müsste noch fragen*/
-}
+ function BeatRandom() {
+     var soundstotal = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+     for (var index = 0; index <= soundstotal; index++) {
+         soundstotal + index;
+         
+     }
+ }
 
 
 function Delete() {
-/*brauche noch Zeit zum überarbeiten :/*/
+/*Gehe heute ins Tutorium*/
 }
-/*function BeatRandom(randomsounds) {
-    var max = 9;
-    var min = 0;
-    var sounds = [sounds[0], sounds[1], sounds[2], sounds[5], sounds[6], sounds[7], sounds[8]];
-    Math.floor(Math.random() * (max - min + 1)) + min;
-   var random = new Audio (randomsounds);
-   random.play();
-}*/
 
