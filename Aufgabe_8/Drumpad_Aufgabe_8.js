@@ -1,62 +1,117 @@
 /*Array*/
-var sounds = [new Audio("../Aufgabe_8/assets/kick.mp3"),
-    new Audio("../Aufgabe_8/assets/hihat.mp3"),
-    new Audio("../Aufgabe_8/assets/snare.mp3"),
-    new Audio("../Aufgabe_8/assets/A.mp3"),
-    new Audio("../Aufgabe_8/assets/F.mp3"),
-    new Audio("../Aufgabe_8/assets/Discord_notification.mp3"),
-    new Audio("../Aufgabe_8/assets/Whatsapp_Notification2.mp3"),
-    new Audio("../Aufgabe_8/assets/Bully_Maguire_Dirt2.mp3"),
-    new Audio("../Aufgabe_8/assets/Give_me_rent.mp3")];
+var sounds = ["../Aufgabe_8/assets/kick.mp3",
+    "../Aufgabe_8/assets/hihat.mp3",
+    "../Aufgabe_8/assets/snare.mp3",
+    "../Aufgabe_8/assets/A.mp3",
+    "../Aufgabe_8/assets/F.mp3",
+    "../Aufgabe_8/assets/Discord_notification.mp3",
+    "../Aufgabe_8/assets/Whatsapp_Notification2.mp3",
+    "../Aufgabe_8/assets/Bully_Maguire_Dirt2.mp3",
+    "../Aufgabe_8/assets/Give_me_rent.mp3"];
 var key = 0;
 var interval;
+var myBeat;
+var index = 0;
+/*Funktion*/
+function playSample(sounds) {
+    var sound = new Audio(sounds);
+    sound.play();
+}
 /*Buttons*/
-document.querySelector("#Button01").addEventListener("click", function () { (sounds[0]).play(); });
-document.querySelector("#Button02").addEventListener("click", function () { (sounds[1]).play(); });
-document.querySelector("#Button03").addEventListener("click", function () { (sounds[2]).play(); });
-document.querySelector("#Button04").addEventListener("click", function () { (sounds[3]).play(); });
-document.querySelector("#Button05").addEventListener("click", function () { (sounds[4]).play(); });
-document.querySelector("#Button06").addEventListener("click", function () { (sounds[5]).play(); });
-document.querySelector("#Button07").addEventListener("click", function () { (sounds[6]).play(); });
-document.querySelector("#Button08").addEventListener("click", function () { (sounds[7]).play(); });
-document.querySelector("#Button09").addEventListener("click", function () { (sounds[8]).play(); });
+document.querySelector("#Button01").addEventListener("click", function () { playSample(sounds[0]); });
+document.querySelector("#Button02").addEventListener("click", function () { playSample(sounds[1]); });
+document.querySelector("#Button03").addEventListener("click", function () { playSample(sounds[2]); });
+document.querySelector("#Button04").addEventListener("click", function () { playSample(sounds[3]); });
+document.querySelector("#Button05").addEventListener("click", function () { playSample(sounds[4]); });
+document.querySelector("#Button06").addEventListener("click", function () { playSample(sounds[5]); });
+document.querySelector("#Button07").addEventListener("click", function () { playSample(sounds[6]); });
+document.querySelector("#Button08").addEventListener("click", function () { playSample(sounds[7]); });
+document.querySelector("#Button09").addEventListener("click", function () { playSample(sounds[8]); }); //.play() entfernt
 document.querySelector("#play").addEventListener("click", playBeat);
 document.querySelector("#random").addEventListener("click", BeatRandom);
 document.querySelector("#trash").addEventListener("click", Delete);
-/*Funktion*/
-function playSample(soundeffects) {
-    soundeffects.play();
-}
 /*Beat Playback*/
-function Beats() {
+/*function Beats() {
     setInterval(function () {
-        (sounds[5]).play();
-        (sounds[7]).play();
-        (sounds[8]).play();
+    playSample (sounds[5]);
+    playSample (sounds[7]);
+    playSample (sounds[8]);
     }, 500);
+} */
+//Beat neue Funktion
+function startInterval() {
+    myBeat = setInterval(function () {
+        playSample(sounds[0]);
+        playSample(sounds[1]);
+        playSample(sounds[2]);
+    }, 700);
 }
 /*Playbutton soll sich zum Stopbutton ändern*/
-function playagain() {
-    interval = setInterval(Beats, 500);
-}
 function playBeat() {
     if (document.querySelector("#play").getAttribute("class") == "fas fa-play fa-2x") {
         document.querySelector("#play").setAttribute("class", "fas fa-stop fa-2x");
-        Beats();
+        startInterval();
     }
     else {
         document.querySelector("#play").setAttribute("class", "fas fa-play fa-2x");
-        clearInterval(interval);
+        clearInterval(myBeat);
     }
 }
 /*Pfad Verlinkung ändern nicht vergessen!*/
 function BeatRandom() {
-    var soundstotal = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    for (var index = 0; index <= soundstotal; index++) {
-        soundstotal + index;
+    var random = Math.floor(Math.random() * 10);
+    for (var i = 0; i <= random; i++) {
+        sounds;
     }
 }
+document.querySelector("#random").setAttribute("class", "fas fa-random fa-2x");
 function Delete() {
-    /*Gehe heute ins Tutorium*/
 }
+/*
+Tutorium Christian Beispiel um mich daran zu orientieren
+
+let außerhalbIndex = 0;
+
+let beatArray = ["beat1.mp3", "beat2.mp3"]
+
+
+let meinIntervall;
+
+document.querySelector("#playButton").addEventListener("click", function() {
+starteIntervall();
+});
+
+document.querySelector("#stopButton").addEventListener("click", function() {
+    stoppeIntervall();
+});
+
+function stoppeIntervall () {
+   // stoppt den Intervall der aktuell läuft
+   // clearIntervall
+    meinIntervall.clearInterval()
+   // außerhalbIndex = 2;
+   außerhalbIndex = 0;
+}
+
+function starteIntervall () {
+    meinIntervall = setInterval(() => {
+        playSample();
+    }, 500);
+}
+
+
+
+
+function playSample () {
+
+    console.log(beatArray[außerhalbIndex].play());
+
+    // wird immer 1 erhöhen
+    außerhalbIndex++;
+
+    if (beatArray.length == außerhalbIndex) {
+        außerhalbIndex = 0;
+    }
+
+} */ 
 //# sourceMappingURL=Drumpad_Aufgabe_8.js.map
