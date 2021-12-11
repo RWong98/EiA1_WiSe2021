@@ -12,6 +12,7 @@ var key = 0;
 var interval;
 var myBeat;
 var index = 0;
+var randomBeat;
 /*Funktion*/
 function playSample(sounds) {
     var sound = new Audio(sounds);
@@ -28,7 +29,7 @@ document.querySelector("#Button07").addEventListener("click", function () { play
 document.querySelector("#Button08").addEventListener("click", function () { playSample(sounds[7]); });
 document.querySelector("#Button09").addEventListener("click", function () { playSample(sounds[8]); }); //.play() entfernt
 document.querySelector("#play").addEventListener("click", playBeat);
-document.querySelector("#random").addEventListener("click", BeatRandom);
+document.querySelector("#random").addEventListener("click", randomInterval);
 document.querySelector("#trash").addEventListener("click", Delete);
 /*Beat Playback*/
 /*function Beats() {
@@ -46,6 +47,12 @@ function startInterval() {
         playSample(sounds[2]);
     }, 700);
 }
+function randomInterval() {
+    var random = Math.floor(Math.random() * 10);
+    randomBeat = setInterval(function () {
+        playSample(sounds[random]);
+    }, 500);
+}
 /*Playbutton soll sich zum Stopbutton ändern*/
 function playBeat() {
     if (document.querySelector("#play").getAttribute("class") == "fas fa-play fa-2x") {
@@ -58,13 +65,6 @@ function playBeat() {
     }
 }
 /*Pfad Verlinkung ändern nicht vergessen!*/
-function BeatRandom() {
-    var random = Math.floor(Math.random() * 10);
-    for (var i = 0; i <= random; i++) {
-        sounds;
-    }
-}
-document.querySelector("#random").setAttribute("class", "fas fa-random fa-2x");
 function Delete() {
 }
 /*
@@ -113,5 +113,28 @@ function playSample () {
         außerhalbIndex = 0;
     }
 
-} */ 
+} */
+/*
+Aufgabe 9 Video Interface und Objekt Instanzen Test nach Rausch Videos
+
+interface People {
+    name: string;
+    age: number;
+}
+
+var people: People [] = [
+    {
+        name: "Gabriel",
+        age: 40
+    },
+    {
+        name: "Peter",
+        age: 99
+    }
+];
+
+for (let index: number = 0; index < people.length; index ++) {
+    console.log(people[index].name);
+    
+}*/ 
 //# sourceMappingURL=Drumpad_Aufgabe_8.js.map
