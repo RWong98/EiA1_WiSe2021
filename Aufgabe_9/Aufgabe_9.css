@@ -1,0 +1,44 @@
+body {
+    background: rgb(94, 89, 89);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+}
+
+main {
+    color: #fff;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+#yourTask {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    left: 600px;
+    height: 20px;
+    width: 300px;
+}
+
+#addTask {
+    position: relative;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    top: 15px;
+    left: 920px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(28, 89, 219);
+    border-radius: 5px;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+    top: 500px;
+    left: -650px;
+}
