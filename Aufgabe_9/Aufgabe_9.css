@@ -2,6 +2,7 @@ body {
     background: rgb(94, 89, 89);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
+    overflow: hidden;
 }
 
 main {
@@ -15,25 +16,115 @@ h1 {
 
 }
 
-#yourTask {
+#yourtask {
     position: relative;
     text-align: center;
     top: 50px;
     left: 600px;
-    height: 20px;
+    font-size: 20px;
+    height: 30px;
     width: 300px;
 }
 
 #addTask {
     position: relative;
     text-align: center;
-    height: 40px;
-    width: 40px;
-    top: 15px;
+    height: 45px;
+    width: 45px;
+    top: 10px;
     left: 920px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: rgb(28, 89, 219);
     border-radius: 5px;
+}
+
+.mockup {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.mockup span{
+  position: relative;
+  z-index: 2;
+}
+
+.mockup:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0084ff;
+  transition: all .35s;
+  opacity: 30%;
+}
+
+.mockup:hover{
+  color: #fff;
+}
+
+.mockup:hover:after{
+  width: 100%;
+}
+
+.flowchart {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+}
+
+.flowchart span{
+  position: relative;
+  z-index: 2;
+}
+
+.flowchart:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0084ff;
+  transition: all .35s;
+  opacity: 30%;
+}
+
+.flowchart:hover{
+  color: #fff;
+}
+
+.flowchart:hover:after{
+  width: 100%;
 }
 
 footer {
@@ -41,4 +132,6 @@ footer {
     text-align: center;
     top: 500px;
     left: -650px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }

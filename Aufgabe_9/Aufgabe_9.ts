@@ -1,18 +1,15 @@
-/* Aufgabe 9 Rausch Videos Test
-var myNumbers:  number [] = [7, 12, 29, 395, 256, 68];
-
-var highestNumber: number = myNumbers[0];
-
-for (let i = 0; i < highestNumber; i++) {
-    highestNumber = myNumbers[i];
-    
-    if (myNumbers[i] > highestNumber) {
-        highestNumber = myNumbers[i];
-    }
-    console.log(highestNumber);
-} */
+var counter = 0;
 
 function Todo() {
+    var task = document.createElement("");
+    var input = document.querySelector("#yourtask");
+}
+
+function addTask() {
+}
+
+document.querySelector("#addtask").addEventListener("click", addTask);
+/*function Todo() {
     var program = document.getElementById("program");
     var p = document.createElement("p");
     p.textContent = "Aufgabe hinzufügen";
@@ -34,5 +31,4 @@ function Todo() {
         p.addEventListener("click", addedText);
         document.querySelector("#addTask").addEventListener("click", newTodo);
     }
-}
-
+}*/
