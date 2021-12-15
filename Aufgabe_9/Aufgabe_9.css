@@ -42,6 +42,11 @@ h2 {
     border-radius: 5px;
 }
 
+.maindiv {
+  position: relative;
+  text-align: center;
+}
+
 .mockup {
   position: fixed;
   top: -100px;
