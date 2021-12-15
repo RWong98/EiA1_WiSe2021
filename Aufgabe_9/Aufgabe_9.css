@@ -16,6 +16,11 @@ h1 {
 
 }
 
+h2 {
+  position: relative;
+  text-align: center;
+}
+
 #yourtask {
     position: relative;
     text-align: center;
@@ -26,7 +31,7 @@ h1 {
     width: 300px;
 }
 
-#addTask {
+#addbutton {
     position: relative;
     text-align: center;
     height: 45px;

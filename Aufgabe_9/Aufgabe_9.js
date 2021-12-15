@@ -1,32 +1,29 @@
 var counter = 0;
-function Todo() {
-    var task = document.createElement("");
-    var input = document.querySelector("#yourtask");
-}
+var input = document.querySelector("#yourtask");
 function addTask() {
-}
-document.querySelector("#addtask").addEventListener("click", addTask);
-/*function Todo() {
-    var program = document.getElementById("program");
-    var p = document.createElement("p");
-    p.textContent = "Aufgabe hinzufügen";
-    program.appendChild(p);
-    var input = document.querySelector("#yourTask");
-    function newTodo() {
-        //console.log(input)
-        var addedText;
-        if (input.value != "")
-            addedText = input.value;
-        // Textfeld leeren
-        input.value = "";
-        // 1. Select div element
-        let program = document.getElementById("program");
-        // 2. Create <p></p> element
-        let p = document.createElement("p");
-        // 3. Add text
-        p.textContent = addedText;
-        p.addEventListener("click", addedText);
-        document.querySelector("#addTask").addEventListener("click", newTodo);
+    counter++;
+    document.querySelector("h2").innerHTML = counter + " total";
+    var unterteilung = document.createElement("div");
+    var listtext = document.createElement("p");
+    var checker = document.createElement("input");
+    var trash = document.createElement("b");
+    var maindiv = document.querySelector(".maindiv");
+    checker.type = "checkbox";
+    checker.className = "checkerbox";
+    trash.className = "fas fa-trash";
+    listtext.className = "newtext";
+    if (input.value != "") {
+        listtext.innerHTML = input.value;
     }
-}*/ 
+    else {
+        listtext.innerHTML = "leer";
+    }
+    maindiv.appendChild(unterteilung);
+    unterteilung.appendChild(checker);
+    unterteilung.appendChild(listtext);
+    unterteilung.appendChild(trash);
+    input.value = "";
+    trash.addEventListener("click", function () { maindiv.removeChild(unterteilung); counter--; document.querySelector("h2").innerHTML = counter + " total"; });
+}
+document.querySelector("#addbutton").addEventListener("click", function () { addTask(); });
 //# sourceMappingURL=Aufgabe_9.js.map
