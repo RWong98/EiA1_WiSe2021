@@ -1,0 +1,80 @@
+body {
+    background: rgb(71, 67, 67);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  main {
+    color: #fff;
+  }
+  
+  h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+  
+  }
+  
+  h2 {
+    position: relative;
+    text-align: center;
+  }
+  
+  #yourtask {
+    position: relative;
+    text-align: center;
+    top: -70px;
+    left: 600px;
+    font-size: 20px;
+    height: 30px;
+    width: 300px;
+  }
+  
+  #addbutton {
+    position: relative;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    top: -110px;
+    left: 920px;
+    background: rgb(28, 89, 219);
+    border-radius: 5px;
+  }
+  
+  .maindiv {
+    position: relative;
+    text-align: center;
+    top: -100px;
+    padding: 10px;
+    overflow-x: hidden;
+  }
+  
+  input.checkerbox {
+    position: relative;
+    top: 35px;
+    left: -150px;
+  }
+  
+  b.fas.fa-trash {
+    position: relative;
+    top: -35px;
+    left: 150px;
+  }
+  
+  #tasktotal {
+    position: relative;
+    left: -170px;
+  }
+  
+  #taskopen {
+    position: relative;
+    top: -45px;
+    left: 0px;
+  }
+  
+  #taskdone {
+    position: relative;
+    top: -93px;
+    left: 190px;
+  }
