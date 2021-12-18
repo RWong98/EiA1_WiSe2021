@@ -1,5 +1,5 @@
 body {
-    background: rgb(94, 89, 89);
+    background: rgb(71, 67, 67);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #fff;
 }
@@ -44,6 +44,19 @@ h2 {
 .maindiv {
   position: relative;
   text-align: center;
+  padding: 10px;
+}
+
+input.checkerbox {
+  position: relative;
+  top: 35px;
+  left: -150px;
+}
+
+b.fas.fa-trash {
+  position: relative;
+  top: -35px;
+  left: 150px;
 }
 
 .mockup {

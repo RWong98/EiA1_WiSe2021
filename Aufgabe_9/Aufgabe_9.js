@@ -1,6 +1,7 @@
 var counter = 0;
 var input = document.querySelector("#yourtask");
 function addTask() {
+    /*Task Counter*/
     counter++;
     document.querySelector("h2").innerHTML = counter + " total";
     var unterteilung = document.createElement("div");
@@ -16,13 +17,14 @@ function addTask() {
         listtext.innerHTML = input.value;
     }
     else {
-        listtext.innerHTML = "leer";
+        listtext.innerHTML = "Nothing :)";
     }
     maindiv.appendChild(unterteilung);
     unterteilung.appendChild(checker);
     unterteilung.appendChild(listtext);
     unterteilung.appendChild(trash);
     input.value = "";
+    /*Task counter geht beim entfernen von Task runter*/
     trash.addEventListener("click", function () { maindiv.removeChild(unterteilung); counter--; document.querySelector("h2").innerHTML = counter + " total"; });
 }
 document.querySelector("#addbutton").addEventListener("click", function () { addTask(); });
