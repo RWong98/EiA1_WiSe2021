@@ -1,16 +1,20 @@
 var counter = 0;
+var taskdone = 0;
+var taskopen = 0;
 var input = document.querySelector("#yourtask");
 function addTask() {
     /*Task Counter*/
     counter++;
     document.querySelector("#tasktotal").innerHTML = counter + " Tasks total";
-    document.querySelector("#taskdone").innerHTML = counter + " Tasks done";
+    taskdone++;
+    document.querySelector("#taskdone").innerHTML = taskdone + " Tasks done";
+    var onedone = document.querySelector(".maindiv");
+    document.querySelector("#taskopen").innerHTML = taskopen + " Tasks open";
     var unterteilung = document.createElement("div");
     var listtext = document.createElement("p");
     var checker = document.createElement("input");
     var trash = document.createElement("b");
     var maindiv = document.querySelector(".maindiv");
-    var done = document.querySelector("#taskdone");
     checker.type = "checkbox";
     checker.className = "checkerbox";
     trash.className = "fas fa-trash";
